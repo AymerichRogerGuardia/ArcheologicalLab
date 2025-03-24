@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31453457, g: 0.55162674, b: 0.82192343, a: 1}
+  m_IndirectSpecularColor: {r: 0.3130029, g: 0.5501603, b: 0.8220557, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6068,10 +6068,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4933e17a0f51141aa92e2fc0dc5943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightHandButtons:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 04f5576b-c625-4dfa-b3f7-bcc545e8a48b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  room_text: {fileID: 0}
   rooms_transform:
   - {fileID: 1728743009}
   - {fileID: 110054247}
   - {fileID: 1037725879}
+  current_room: 0
+  speed: 0
 --- !u!4 &529792820
 Transform:
   m_ObjectHideFlags: 0
