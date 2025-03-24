@@ -5,18 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Menu.unity
-    guid: b25d6c9a30993694f844f2d7b76cade0
-  - enabled: 0
-    path: Assets/Interior Laboratory/Maps/Demo.unity
-    guid: bd12ec0ccda007649bd1c0d33e4ea138
   - enabled: 1
     path: Assets/Scenes/TestMenu.unity
     guid: c4fab1f68aa4775478a58c1e3ea1aa07
   - enabled: 1
-    path: Assets/Lab/PrefabLab/Lab.unity
-    guid: e431c4d006befc04292253b802971ba7
+    path: Assets/Lab/PrefabLab/LabGodScene.unity
+    guid: f71f6c26461b71240ac63f3a51134c87
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
