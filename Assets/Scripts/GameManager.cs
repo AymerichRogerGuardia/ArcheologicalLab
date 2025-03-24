@@ -29,43 +29,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        if (GameObject.Find("Player").TryGetComponent<AudioSource>(out AudioSource a))
-        {
-            audioSource = a;
-        }
-    }
-
-    public void SetAnim(Animator an)
-    {
-        anim = an;
-    }
-    public void ChangeRotation(bool open)
-    {
-        anim.SetBool("open", open);
-    }
 
     public void LoadScene(string sceneName)
     {
-        if (fade_ob != null)
-        {
-            Material m = fade_ob.GetComponent<MeshRenderer>().material;
-            StartCoroutine(ChangeColor(m, sceneName));
-        }
-        else
-            SceneManager.LoadScene(sceneName);
-    }
-    private IEnumerator ChangeColor(Material m, string sceneName)
-    {
-        m.color = new Color(m.color.r, m.color.g, m.color.b, m.color.a + Time.deltaTime);
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(sceneName);
+           SceneManager.LoadScene(sceneName);
     }
 
-    public void PlayClip(AudioClip clip)
-    {
-        audioSource.clip = clip;
-        audioSource.Play();
-    }
+
+
 }
