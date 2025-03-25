@@ -11,6 +11,10 @@ TagManager:
   - Button
   - Polen
   - Platillo
+  - Open
+  - Baston
+  - Palo
+  - Muestra
   layers:
   - Default
   - TransparentFX
