@@ -6,7 +6,7 @@ public class ComprobarMuestra : MonoBehaviour
 {
     private BoxCollider bc;
     [SerializeField] private DoorController door;
-    private bool isMustra = false;
+    [SerializeField]private bool isMustra = false;
 
     [SerializeField] private GameObject polen;
     private void Start()
@@ -16,7 +16,7 @@ public class ComprobarMuestra : MonoBehaviour
 
     private void Update()
     {
-        if (door.GetSemIsOpen() && isMustra)
+        if (!door.GetSemIsOpen() && isMustra)
         {
             polen.SetActive(true);
         }
@@ -24,7 +24,9 @@ public class ComprobarMuestra : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Muestra")
+        DepositarMuestra temp = other.GetComponent<DepositarMuestra>();
+
+        if (other.tag == "Muestra" && temp.tieneMuestra)
         {
             isMustra = true;
         }

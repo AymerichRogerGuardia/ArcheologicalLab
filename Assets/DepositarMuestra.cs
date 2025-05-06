@@ -6,7 +6,7 @@ public class DepositarMuestra : MonoBehaviour
 {
     private BoxCollider bc;
     [SerializeField] private GameObject muesta;
-    private bool tieneMuestra = false;
+    public bool tieneMuestra = false;
 
     private void Start()
     {
