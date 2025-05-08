@@ -16,9 +16,10 @@ public class ComprobarMuestra : MonoBehaviour
 
     private void Update()
     {
-        if (!door.GetSemIsOpen() && isMustra)
+        if (!door.GetSemIsOpen() && isMustra && polen != null)
         {
             polen.SetActive(true);
+            polen = null;
         }
     }
 

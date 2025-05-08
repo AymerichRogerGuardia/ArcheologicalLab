@@ -7,7 +7,6 @@ public class DoorController : MonoBehaviour
     public float rotationSpeed = 2f; // Velocidad de apertura
     private Quaternion closedRotation;
     private Quaternion openRotation;
-    [SerializeField] private GameObject a;
 
     private void Start()
     {
@@ -15,17 +14,7 @@ public class DoorController : MonoBehaviour
         closedRotation = transform.localRotation;
         openRotation = Quaternion.Euler(0, 180, 0); // Rotación abierta
     }
-    private void Update()
-    {
-        if (!isOpen)
-        {
-            a.SetActive(false);
-        }
-        else
-        {
-            a.SetActive(true);
-        }
-    }
+
 
     public void ToggleDoor()
     {
